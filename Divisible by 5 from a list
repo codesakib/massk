@@ -1,0 +1,9 @@
+def divisible_by_5(numlist):
+    print('Divisible by 5')
+    for i in numlist:
+        if i%5 == 0:
+            print(i)
+
+number_x = [10, 20, 33, 46, 55]
+print('The Given List is ', number_x)
+divisible_by_5(number_x)
