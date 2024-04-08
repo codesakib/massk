@@ -1,0 +1,15 @@
+def count_a_word(line, word):
+    count = 0
+    for i in line:
+        if i == word:
+            count = count + 1
+    print(word, 'is',count, 'times there')
+    
+aline = input()
+split_aline = aline.split()
+print(split_aline)
+
+aword = input()
+print(aword)
+
+count_a_word(split_aline, aword)
