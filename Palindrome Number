@@ -1,0 +1,19 @@
+def palindrome_number(num):
+    alist = list(num)
+    total_char = len(alist)
+    blist = list(range(total_char))
+    j = total_char - 1
+    k = 0
+    for i in alist:
+        blist[k] = alist[j]
+        j = j - 1
+        k = k + 1
+    
+    if alist == blist:
+        print(num, "is a Palindrome Number")
+    else:
+        print(num, "is not a Palindrome Number")
+    
+
+num1 = input()
+palindrome_number(num1)
