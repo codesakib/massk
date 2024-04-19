@@ -1,0 +1,16 @@
+def multiplication(num):
+    for i in range(num):
+        if i == 0:
+            continue
+        else:
+            for j in range(11):
+                if j == 0:
+                    continue
+                else:
+                    print(i*j, end = " ")
+            print("")
+
+num1 = int(input())
+num2 = num1 + 1
+
+multiplication(num2)
