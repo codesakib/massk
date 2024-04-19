@@ -1,0 +1,27 @@
+def new_list(list1, list2):
+    odd_list = list()
+    for i in list1:
+        if i%2 == 0:
+            continue
+        else:
+            odd_list.append(i)
+    
+    even_list = list()
+    for j in list2:
+        if j%2 != 0:
+            continue
+        else:
+            even_list.append(j)
+    
+    final_list = odd_list + even_list
+    print("The final list is: ",final_list)
+    print('min=',min(final_list))
+    print('max=',max(final_list))
+    print('sum=',sum(final_list))
+    print('member=',len(final_list))
+    print('average=',sum(final_list)/len(final_list))
+
+alist = [10,20,25,30,35]
+blist = [40,45,60,75,90]
+
+new_list(alist,blist)
