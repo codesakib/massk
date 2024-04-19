@@ -1,0 +1,8 @@
+def reversing(number):
+    while number > 0:
+        digits = number%10
+        print(digits, end = " ")
+        number = number // 10
+        
+num = int(input())
+reversing(num)
