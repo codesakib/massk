@@ -1,0 +1,12 @@
+def lists_to_dict(keys,values):
+    dictionary = dict()
+    i = 0
+    for key in keys:
+        dictionary[key] = values[i]
+        i = i + 1
+    print(dictionary)  
+
+keys = ['Ten', 'Twenty', 'Thirty']
+values = [10, 20, 30]
+
+lists_to_dict(keys,values)
